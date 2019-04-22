@@ -1,0 +1,40 @@
+<view>
+    <view>{{message}}</view>
+
+    <view a:for="{{items}}"> {{item}} </view>
+
+    <view a:if="{{view == 'WEBVIEW'}}"> WEBVIEW </view>
+    <view a:elif="{{view == 'APP'}}"> APP </view>
+    <view a:else="{{view == 'dingtalk'}}"> dingtalk </view>
+
+    <template name="staffName">
+      <view>
+        FirstName: {{firstName}}, LastName: {{lastName}}
+      </view>
+    </template>
+
+    <template is="staffName" data="{{...staffA}}"></template>
+    <template is="staffName" data="{{...staffB}}"></template>
+    <template is="staffName" data="{{...staffC}}"></template>
+
+
+    <view onTap="add"> {{count}} </view>
+    <view>{{name}}</view>
+
+    <view id="item-{{id}}"> </view>
+
+    <view a:if="{{condition}}">哈喽 </view>
+
+    <checkbox checked="{{false}}">苹果 </checkbox>
+    <checkbox checked="{{true}}">香蕉 </checkbox>
+    <checkbox checked="{{false}}">草莓 </checkbox>
+
+    <view hidden="{{false ? true : false}}"> Hidden </view>
+
+    <view> {{a + b}} + {{c}} + d </view>
+
+    <view a:if="{{length > 5}}"> length</view>
+
+    <view>{{"hello" + name}}</view>
+   
+</view>

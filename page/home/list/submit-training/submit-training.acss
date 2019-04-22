@@ -1,0 +1,52 @@
+@import "/util/lifecycle.acss";
+@import "/util/grid/index.acss";
+/* @import '/util/items/index.acss'; */
+.api {
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+  font-size: 28rpx;
+  padding: 32rpx;
+}
+
+.container {
+  padding-top: 48rpx;
+}
+.slogon {
+  text-align: center;
+}
+
+.logo {
+  margin-top: 60rpx;
+  width: 90px;
+  height: 90px;
+}
+
+.info {
+  margin-top: 30rpx;
+  margin-bottom: 60rpx;
+}
+
+.desc {
+  font-size: 28rpx;
+  color: #888;
+}
+
+.form-line{
+  margin:10px;
+}
+.form-row-label{
+  width: 2.5rem;
+}
+.page-section-btns view{
+  display: block;
+}
+/* .a-image .a-list-item-thumb{
+  position:absolute;
+  left:280px;
+  top:465px;
+  background-size:20% 20%;
+} */
+.form-row .a-list-item-thumb {
+    width: 44rpx;
+    height: 44rpx;
+    margin-right: 30rpx;
+}

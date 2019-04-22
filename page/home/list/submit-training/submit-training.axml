@@ -1,0 +1,70 @@
+<import src="/util/lifecycle.axml"/>
+<import src="/util/grid/index.axml"/>
+<import src="/page/home/template_list/submit-training-template/submit-training-template.axml"/>
+<view class="page">
+    <!-- <view class="page-description">培训发送相关人员</view> -->
+    <form onSubmit="onSubmit" onReset="onReset">
+        <view class="page-section">
+            <view class="form-row">
+              <view class="form-row-label">人次</view>
+              <view class="form-row-content">
+                <input name="person" class="input" placeholder="数字" />
+              </view>
+            </view>
+            <view class="form-line" />
+            <!-- <view class="form-row" onTap="monthUpload"> -->
+            <view class="form-row" >
+              <view class="form-row-label">月度培训计划表</view>
+              <view class="form-row-content"  >
+                <input name="month" class="input" placeholder="电子件（签字件）" />
+              </view>
+            </view>
+            <view class="form-line" />
+            <view class="form-row">
+              <view class="form-row-label">物业培训台账</view>
+              <view class="form-row-content"  >
+                <input name="wuye" class="input" placeholder="电子件" />
+              </view>
+            </view>
+            <view class="form-line" />
+            <view class="form-row">
+              <view class="form-row-label">培训签到表</view>
+              <view class="form-row-content"  >
+                <input name="qiandao" class="input" placeholder="电子件（签字件）" />
+              </view>
+            </view>
+            <view class="form-line" />
+            <view class="form-row">
+              <view class="form-row-label">培训现场照片</view>
+              <view class="form-row-content"  >
+                <input name="zhaopian" class="input" placeholder="电子件2张" />
+              </view>
+            </view>
+            <view class="form-line" />
+            <view class="form-row">
+              <view class="form-row-label">培训现场录音</view>
+              <view class="form-row-content"  >
+                <input name="luyin" class="input" placeholder="录音10分钟" />
+              </view>
+            </view>
+            <view class="form-line" />
+            <view class="form-row">
+              <view class="form-row-label">培训满意度调查反馈表</view>
+              <view class="form-row-content"  >
+                <input name="fankui" class="input" placeholder="电子件" />
+              </view>
+            </view>
+           <view class="form-line" />
+            <view class="form-row" onTap="getLingDaoList">
+              <view class="form-row-label">纪要接收人</view>
+              <image  class="a-list-item-thumb" src="{{thumbimg}}" mode="scaleToFill" />
+              <!-- <input name="receiveUserid" class="input" value="{{receiveUserid}}" /> -->
+            </view>
+        </view>
+        <view>接收人：<input name="receiveUserName" class="input" value="{{receiveUserName}}" /></view>
+        <view><input name="receiveCid" class="input" value="{{receiveCid}}" /></view>
+        <view class="page-section-btns">
+          <view><button type="primary"  formType="submit">提交</button></view>
+        </view>
+    </form>
+</view>

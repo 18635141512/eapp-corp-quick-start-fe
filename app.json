@@ -1,0 +1,42 @@
+{
+  "pages": [
+    
+    "page/home/home",
+    "page/home/list/submit-training/submit-training",
+    "page/home/list/check-training/check-training",
+    "page/chars/chars",
+    "page/view/view",
+    "page/index/index",
+    "page/demo/demo"
+    
+    
+  ],
+  "window": {
+    "enableWK": "YES",
+    "enableDSL": true,
+    "defaultTitle": "测试宝",
+    "backgroundColor": "#F5F5F9",
+    "pullRefresh": false,
+    "allowsBounceVertical": true
+  },
+  "tabBar": {
+    "textColor": "#404040",
+    "selectedColor": "#108ee9",
+    "backgroundColor": "#F5F5F9",
+    "items": [
+      {
+        "pagePath": "page/home/home",
+        "icon": "image/icon_API.png",
+        "activeIcon": "image/icon_API_HL.png",
+        "name": "首页"
+      },
+      {
+        "pagePath": "page/chars/chars",
+        "icon": "image/icon_biz.png",
+        "activeIcon": "image/icon_biz_HL.png",
+        "name": "统计"
+      }
+    ]
+  },
+  "debug": true
+}

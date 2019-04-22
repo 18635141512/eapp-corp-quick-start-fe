@@ -1,0 +1,5 @@
+<view class="spliceData">
+  <view a:for="{{a.b}}" key="{{item}}" style="border:1px solid red" onTap="suibian">
+    {{item}}
+  </view>
+</view>
