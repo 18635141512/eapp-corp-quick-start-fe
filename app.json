@@ -4,6 +4,8 @@
     "page/home/home",
     "page/home/list/submit-training/submit-training",
     "page/home/list/check-training/check-training",
+    "page/home/list/check-training/check-training-date/check-training-date",
+    "page/home/list/check-training/check-training-date/training-date-file/training-date-file",
     "page/chars/chars",
     "page/view/view",
     "page/index/index",

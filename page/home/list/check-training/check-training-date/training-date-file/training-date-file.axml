@@ -1,0 +1,5 @@
+<import src="../../../../template/training-date-file-template/training-date-file-template.axml" />
+
+<view>
+    <template is="Trainingdate" data={{...trainingdateData}}>
+</view>

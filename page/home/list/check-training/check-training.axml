@@ -1,12 +1,8 @@
-<import src="/util/lifecycle.axml"/>
-<import src="/util/grid/index.axml"/>
-<view class="container" key="container">
-    <view class="slogon">
-        <image src="/image/mingren.png" mode="scaleToFill" class="logo"/>
-        <view class="info">
-            <text class="desc">高新普惠网络科技有限公司</text>
-        </view>
-    </view>
-    <template is="grid" data="{{...arr}}"/>
+<import src="/util/lifecycle.axml" />
+<import src="/util/grid/index.axml" />
+
+<view class="container">
+  <template is="grid" data="{{...arr}}" />
 </view>
-<!-- <template is="" a:if="{{}}"></template> -->
+
+<template is="lifecycle" a:if="{{debug}}"/>

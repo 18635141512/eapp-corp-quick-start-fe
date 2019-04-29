@@ -1,6 +1,6 @@
 <import src="/util/lifecycle.axml"/>
 <import src="/util/grid/index.axml"/>
-<import src="/page/home/template_list/submit-training-template/submit-training-template.axml"/>
+<import src="/page/home/template/submitTrainingTemplate/submitTrainingTemplate.axml"/>
 <view class="page">
     <!-- <view class="page-description">培训发送相关人员</view> -->
     <form onSubmit="onSubmit" onReset="onReset">
@@ -8,18 +8,32 @@
             <view class="form-row">
               <view class="form-row-label">人次</view>
               <view class="form-row-content">
-                <input name="person" class="input" placeholder="数字" />
+                <input name="person" class="input" placeholder="数字 " />
               </view>
             </view>
             <view class="form-line" />
-            <!-- <view class="form-row" onTap="monthUpload"> -->
-            <view class="form-row" >
+            <view class="form-row" onTap="monthUploadFile">
               <view class="form-row-label">月度培训计划表</view>
-              <view class="form-row-content"  >
+              <!-- <view class="form-row-content"  >
                 <input name="month" class="input" placeholder="电子件（签字件）" />
-              </view>
+              </view> -->
             </view>
             <view class="form-line" />
+            <view a:if={{filedata}}  class="form-row" onTap="lookFile" a:for={{filedata}} a:for-item="item"
+            data-index={{index}} data-fileName={{item.fileName}} data-spaceId={{item.spaceId}}
+            data-fileId={{item.fileId}} data-fileSize={{item.fileSize}} data-fileType={{item.fileType}}>
+                <view class="form-row-label">查看文件</view>
+                 <view>{{item.fileName}}</view>
+                 
+            </view>
+            <!-- <view class="form-line" onTap="zhaopianChoose"/>
+            <view class="form-row">
+              <view class="form-row-label">培训现场照片</view>
+              <view class="form-row-content"  >
+                <input name="zhaopian" class="input" placeholder="电子件2张" />
+              </view>
+            </view> -->
+            <!-- <view class="form-line" />
             <view class="form-row">
               <view class="form-row-label">物业培训台账</view>
               <view class="form-row-content"  >
@@ -33,13 +47,7 @@
                 <input name="qiandao" class="input" placeholder="电子件（签字件）" />
               </view>
             </view>
-            <view class="form-line" />
-            <view class="form-row">
-              <view class="form-row-label">培训现场照片</view>
-              <view class="form-row-content"  >
-                <input name="zhaopian" class="input" placeholder="电子件2张" />
-              </view>
-            </view>
+            
             <view class="form-line" />
             <view class="form-row">
               <view class="form-row-label">培训现场录音</view>
@@ -53,7 +61,7 @@
               <view class="form-row-content"  >
                 <input name="fankui" class="input" placeholder="电子件" />
               </view>
-            </view>
+            </view> -->
            <view class="form-line" />
             <view class="form-row" onTap="getLingDaoList">
               <view class="form-row-label">纪要接收人</view>
